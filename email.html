@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    input{
+        height: 2em;
+    }
+    body{
+        background-color: lightgray;
+        font-size: 2em;
+        font-family: Arial, Helvetica, sans-serif;
+        height: 90vh;
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        color: white;
+    }
+    .content{
+       background-color: gray;
+       padding: 50px;
+       display: flex;
+    }
+    #gen{
+        height: 2.5em;
+        width: 5em;
+        border-radius: 1vh;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 50%;
+        transition: 0.1s;
+    }
+    #gen:hover{
+        background-color: gray;
+        color: white;
+    }
+    .labels{
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        padding: 0.5em;
+    }
+    .inputs{
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        padding: 0.5em;
+        justify-content: space-around;
+    }
+    label{
+        margin: 2px;
+    }
+    
+</style>
+<body>
+    <div class="content">
+        <div class="labels">
+            <label>Prenom</label>
+            <label>Nom</label>
+            <label>Email</label>            
+        </div>
+        <div class="inputs">
+            <input type="text" id="Prenom" >
+            <input type="text" id="Nom">
+            <input type="text" id="email" disabled>
+            <button id="gen">Génerer</button>
+        </div>
+        
+    </div>
+    </body>
+<script src="email.js"></script>
+</html>
