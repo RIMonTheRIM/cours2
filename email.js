@@ -9,7 +9,7 @@ document.getElementById("gen").onclick = function(){
     console.log(emailTxt);
     
     document.getElementById("email").setAttribute("value",emailTxt);
-    let labelList = document.getElementsByTagName("label");
+    let labelList = document.querySelectorAll("label");
     for(var i = 0; i<labelList.length;i++){
         labelList[i].style.color = "rgb(56, 207, 56)";
     }
