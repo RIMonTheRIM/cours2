@@ -14,3 +14,9 @@ document.getElementById("gen").onclick = function(){
         labelList[i].style.color = "rgb(56, 207, 56)";
     }
 }
+document.getElementById("eff").onclick = function(){
+    document.getElementById("Prenom").value = "";
+    document.getElementById("Nom").value = "";
+    //document.getElementById("email").setAttribute("value","");
+    document.getElementById("email").value = "";
+}
